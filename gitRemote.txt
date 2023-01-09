@@ -1,0 +1,19 @@
+steps to link local repo to remote repo
+1. create remote repo
+2. create local repo with initializing >>>git init command in it
+3.create "README.md" file in local repo 
+4. add and commit it locally
+5. use >>>git remote add origin <URL_OF_RemoteRepo> 
+       to link(map) local and remote directory
+6.This commit is saved locally and not on remote
+  To commit it on remote 
+   1)Set username and email Using
+     >>>git config --global user.name "SameUserNameOnRemoteAccount"
+     >>>git config --global user.email "EmailUsedForRemoteAccount"
+   
+   2)enter authentication information(IF asked) either login from browser or from token
+
+7. To get login info use >>>git config --list
+8. To push commits(local commits not local changes) on remote server
+   >>>git push -u origin master
+9. enter authentication information(IF asked) either login from browser or from token
